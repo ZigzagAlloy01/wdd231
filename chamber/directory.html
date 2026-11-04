@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore the Juárez Chamber of Commerce business directory and connect with companies serving Ciudad Juárez, Chihuahua.">
+        <meta name="author" content="Iván Salamanca">
+        <meta name="keywords" content="Ciudad Juárez, Juárez, Chihuahua, business directory, chamber of commerce, local businesses">
+        <meta name="theme-color" content="#f4f4f4">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Business Directory | Juárez Chamber of Commerce">
+        <meta property="og:description" content="Discover companies and business services in Ciudad Juárez, Chihuahua.">
+        <meta property="og:locale" content="en_US">
+        <title>Business Directory | Juárez Chamber of Commerce</title>
+        <link rel="icon" type="image/webp" href="https://imagepaste.org/i/pmg42486.webp">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/directory.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main-content">Skip to main content</a>
+        <header class="site-header">
+            <div class="header-inner page-shell">
+                <a class="brand" href="https://zigzagalloy01.github.io/wdd231/index.html" aria-label="Juárez Chamber of Commerce home">
+                    <img class="brand-logo" alt="Juárez Chamber of Commerce logo" width="58" height="58" src="https://imagepaste.org/i/pmg42486.webp">
+                    <span class="brand-name">Juárez Chamber <span>of Commerce</span></span>
+                </a>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+                        <span aria-hidden="true">◐</span>
+                    </button>
+                    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+                        <span class="menu-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+                    <a href="https://zigzagalloy01.github.io/wdd231/index.html">Home</a>
+                    <a href="directory.html" aria-current="page">Directory</a>
+                    <a href="join.html">Join</a>
+                    <a href="discover.html">Discover</a>
+                </nav>
+            </div>
+        </header>
+        <main class="page-shell main-content" id="main-content">
+            <section class="page-intro" aria-labelledby="page-title">
+                <div>
+                    <p class="eyebrow">Local connections. Shared growth.</p>
+                    <h1 id="page-title">Business Directory</h1>
+                    <p class="intro-copy">Find companies, services, and business resources across Ciudad Juárez, Chihuahua.</p>
+                </div>
+                <div class="directory-summary" aria-label="Directory location">
+                    <span class="summary-label">Serving</span>
+                    <strong>Ciudad Juárez</strong>
+                    <span>Chihuahua, Mexico</span>
+                </div>
+            </section>
+
+            <section class="directory-tools" aria-label="Directory controls">
+                <label class="search-box" for="member-search">
+                    <span class="search-label">Search businesses</span>
+                    <input id="member-search" name="member-search" type="search" placeholder="Search by name or industry" autocomplete="off">
+                </label>
+                <div class="view-controls" role="group" aria-label="Choose directory layout">
+                    <button class="view-button is-active" id="grid-view" type="button" aria-pressed="true">
+                        <span class="view-icon grid-icon" aria-hidden="true"></span>
+                        <span>Grid</span>
+                    </button>
+                    <button class="view-button" id="list-view" type="button" aria-pressed="false">
+                        <span class="view-icon list-icon" aria-hidden="true"></span>
+                        <span>List</span>
+                    </button>
+                </div>
+            </section>
+
+            <div class="directory-meta">
+                <p id="directory-status" class="directory-status" aria-live="polite">Loading business directory...</p>
+                <p class="membership-key"><span class="membership-dot gold"></span> Gold <span class="membership-dot silver"></span> Silver <span class="membership-dot member"></span> Member</p>
+            </div>
+
+            <section class="member-grid" id="member-directory" aria-label="Chamber member businesses">
+            </section>
+
+            <noscript>
+                <p class="noscript-message">JavaScript must be enabled to load and display the business directory.</p>
+            </noscript>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-inner page-shell">
+                <section>
+                    <h2 id="footer-contact-title">Juárez Chamber of Commerce</h2>
+                    <p>Ciudad Juárez, Chihuahua, Mexico</p>
+                    <p>Supporting local business and regional growth</p>
+                    <p><a href="mailto:ivanblued@outlook.com">ivanblued@outlook.com</a></p>
+                </section>
+                <div class="social-links" aria-label="Social media links">
+                    <a class="social-link" href="https://github.com/ZigzagAlloy01" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.82c.56.1.77-.24.77-.54v-2.1c-3.14.68-3.8-1.33-3.8-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.66 1.23 3.31.94.1-.73.4-1.23.72-1.51-2.5-.29-5.12-1.25-5.12-5.55 0-1.23.44-2.24 1.17-3.03-.12-.29-.51-1.44.11-2.99 0 0 .95-.3 3.08 1.16a10.7 10.7 0 0 1 5.6 0c2.13-1.45 3.08-1.16 3.08-1.16.62 1.55.23 2.7.11 2.99.73.79 1.17 1.8 1.17 3.03 0 4.31-2.62 5.25-5.13 5.54.4.35.76 1.03.76 2.08v3.1c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg>
+                    </a>
+                    <a class="social-link social-link--linkedin" href="https://www.linkedin.com/in/lorenzo-iv%C3%A1n-salamanca-c%C3%B3rdoba-935813367" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.53v16.94c0 .85.69 1.53 1.55 1.53h16.9c.86 0 1.55-.68 1.55-1.53V3.53C22 2.68 21.31 2 20.45 2ZM7.93 18.46H4.98V9h2.95v9.46ZM6.46 7.71a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12 10.75h-2.94v-4.6c0-1.1-.02-2.52-1.54-2.52-1.54 0-1.78 1.2-1.78 2.44v4.68H9.26V9h2.82v1.29h.04c.4-.74 1.35-1.52 2.78-1.52 2.98 0 3.56 1.96 3.56 4.5v5.19Z"/></svg>
+                    </a>
+                    <a class="social-link social-link--instagram" href="https://www.instagram.com/ivanblued/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                </div>
+                <section class="footer-development" aria-label="Page development information">
+                    <p>
+                        WDD 231 Academic Project
+                    </p>
+                    <p>
+                        By Lorenzo Iván Salamanca
+                    </p>
+                    <p>© <span id="currentyear"></span> <span>Juárez Chamber of Commerce</span>· <span>Mexico</span>.</p>
+                    <p>Last Modification: <span id="lastModified"></span></p>
+                </section>
+            </div>
+        </footer>
+    </body>
+</html>

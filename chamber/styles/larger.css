@@ -1,0 +1,190 @@
+@media screen and (min-width: 48rem) {
+    .header-inner {
+        min-height: 5.4rem;
+        grid-template-columns: auto 1fr auto;
+        gap: 1.5rem;
+    }
+
+    .header-actions {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .primary-nav {
+        grid-column: 2;
+        grid-row: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: clamp(0.3rem, 1.2vw, 1.1rem);
+        padding: 0;
+    }
+
+    .primary-nav a {
+        min-height: 2.7rem;
+        padding-inline: 0.8rem;
+    }
+
+    .page-intro {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .directory-summary {
+        min-width: 14rem;
+    }
+
+    .directory-tools {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+        gap: 1.5rem;
+        padding: 1rem 1.2rem;
+    }
+
+    .search-box {
+        flex: 1;
+        max-width: 34rem;
+    }
+
+    .view-controls {
+        width: 13rem;
+        flex: 0 0 auto;
+    }
+
+    .directory-meta {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .member-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem;
+    }
+
+    .member-card:hover {
+        transform: translateY(-2px);
+        border-color: var(--color-text-soft);
+        box-shadow: 0 0.55rem 1.5rem rgb(0 0 0 / 0.1);
+    }
+
+    .member-grid.is-list .member-card {
+        grid-template-columns: minmax(12rem, 0.28fr) minmax(0, 1fr);
+    }
+
+    .member-grid.is-list .member-card-header {
+        align-content: center;
+        justify-items: start;
+        border-right: 1px solid var(--color-border);
+        border-bottom: 0;
+        text-align: left;
+    }
+
+    .member-grid.is-list .member-card-body {
+        grid-template-columns: 5.5rem minmax(0, 1fr);
+    }
+
+    .member-grid.is-list .member-image {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    .footer-inner {
+        grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-development {
+        justify-self: end;
+        padding: 0;
+        border: 0;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 75rem) {
+    .member-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.35rem;
+    }
+
+    .member-grid.is-list {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .member-card-body {
+        grid-template-columns: 6rem minmax(0, 1fr);
+        gap: 1rem;
+        padding: 0.95rem;
+    }
+
+    .member-image {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .member-details p,
+    .member-details a {
+        font-size: 0.8rem;
+    }
+
+    .member-description {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 110rem) {
+    :root {
+        --content-width: 100rem;
+        --page-gutter: 3rem;
+    }
+
+    .member-grid {
+        gap: 1.6rem;
+    }
+
+    .member-card-header {
+        min-height: 5.6rem;
+    }
+
+    .member-card-body {
+        grid-template-columns: 6.5rem minmax(0, 1fr);
+        padding: 1.1rem;
+    }
+
+    .member-image {
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+}
+
+@media (hover: hover) {
+    .primary-nav a:not([aria-current="page"]):hover {
+        background: var(--color-surface-muted);
+    }
+
+    .view-button:not(.is-active):hover {
+        border-color: var(--color-strong);
+        background: var(--color-surface-muted);
+    }
+
+    .social-links a:hover {
+        transform: translateY(-2px);
+        background: var(--color-accent);
+    }
+}
