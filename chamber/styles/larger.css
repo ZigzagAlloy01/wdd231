@@ -95,7 +95,7 @@
     }
 
     .member-grid.is-list .member-card-body {
-        grid-template-columns: 5.5rem minmax(0, 1fr);
+        grid-template-columns: 100% minmax(0, 1fr);
     }
 
     .member-grid.is-list .member-image {

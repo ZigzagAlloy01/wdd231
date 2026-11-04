@@ -256,6 +256,10 @@ input:focus-visible {
     color: var(--color-strong-text);
 }
 
+.about-body p {
+    max-width: fit-content;
+}
+
 .main-content {
     flex: 1;
     padding-block: clamp(2rem, 5vw, 3.5rem) clamp(3rem, 6vw, 5rem);
@@ -396,12 +400,19 @@ input:focus-visible {
 }
 
 .grid-icon {
-    background: linear-gradient(currentColor 0 0) 0 0 / 0.42rem 0.42rem, linear-gradient(currentColor 0 0) 100% 0 / 0.42rem 0.42rem, linear-gradient(currentColor 0 0) 0 100% / 0.42rem 0.42rem, linear-gradient(currentColor 0 0) 100% 100% / 0.42rem 0.42rem;
+    background: 
+        linear-gradient(currentColor, currentColor) 0 0 / 0.42rem 0.42rem, 
+        linear-gradient(currentColor, currentColor) 100% 0 / 0.42rem 0.42rem, 
+        linear-gradient(currentColor, currentColor) 0 100% / 0.42rem 0.42rem, 
+        linear-gradient(currentColor, currentColor) 100% 100% / 0.42rem 0.42rem;
     background-repeat: no-repeat;
 }
 
 .list-icon {
-    background: linear-gradient(currentColor 0 0) 0 0.08rem / 100% 2px, linear-gradient(currentColor 0 0) 0 0.48rem / 100% 2px, linear-gradient(currentColor 0 0) 0 0.88rem / 100% 2px;
+    background: 
+        linear-gradient(currentColor, currentColor) 0 0.08rem / 100% 2px, 
+        linear-gradient(currentColor, currentColor) 0 0.48rem / 100% 2px, 
+        linear-gradient(currentColor, currentColor) 0 0.88rem / 100% 2px;
     background-repeat: no-repeat;
 }
 
@@ -586,13 +597,12 @@ input:focus-visible {
 }
 
 .member-grid.is-list .member-card-body {
-    grid-template-columns: 5rem minmax(0, 1fr);
+    grid-template-columns: 100% minmax(0, 1fr);
     align-items: center;
 }
 
 .member-grid.is-list .member-image {
-    width: 5rem;
-    height: 5rem;
+    display: none;
 }
 
 .empty-state,
