@@ -267,7 +267,7 @@ h1 {
 }
 
 .about-body p {
-    max-width: auto;
+    max-width: fit-content;
     color: var(--color-ink);
     font-size: 0.98rem;
     line-height: 1.75;
