@@ -112,7 +112,7 @@ const renderMembers = () => {
 
 const loadMembers = async () => {
     try {
-        const response = await fetch("data/members.json");
+        const response = await fetch("https://zigzagalloy01.github.io/wdd231/data/members.json");
         if (!response.ok) {
             throw new Error(`The directory data could not be loaded (${response.status}).`);
         }
