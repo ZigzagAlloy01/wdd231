@@ -6,7 +6,7 @@
         "address": "Blvd. Tomás Fernández 7930, Suite 305, Campestre Juárez, C.P. 32460, Ciudad Juárez, Chihuahua",
         "phone": "+52 656 611 5090",
         "website": "https://www.bdomexico.com/",
-        "image": "bdo-juarez.webp",
+        "image": "https://imagepaste.org/i/scw44qr8.webp",
         "membershipLevel": 3,
         "description": "Professional services supporting organizations with audit, tax, and business advisory expertise."
     },
@@ -17,7 +17,7 @@
         "address": "Carretera Juárez-Porvenir 991, Col. Zaragocita, C.P. 32550, Ciudad Juárez, Chihuahua",
         "phone": "+52 656 295 4800",
         "website": "https://www.siltcorp.com/",
-        "image": "silt-logistics.webp",
+        "image": "https://imagepaste.org/i/rw2ryr6d.webp",
         "membershipLevel": 3,
         "description": "A logistics and transportation company with operating history in Ciudad Juárez and cross-border services."
     },
@@ -28,7 +28,7 @@
         "address": "Av. Parque Industrial Juárez 3551, Parque Industrial Juárez, C.P. 32630, Ciudad Juárez, Chihuahua",
         "phone": "+52 656 630 2100",
         "website": "https://www.intermex.com/",
-        "image": "intermex.webp",
+        "image": "https://imagepaste.org/i/n56ewh7w.webp",
         "membershipLevel": 3,
         "description": "Industrial real estate and shelter services for companies establishing and expanding operations in the region."
     },
@@ -39,7 +39,7 @@
         "address": "Carretera Panamericana Km 23.5, Col. Granjas, C.P. 32690, Ciudad Juárez, Chihuahua",
         "phone": "+52 656 637 5700",
         "website": "https://www.solvay.com/",
-        "image": "solvay-fluor-mexico.webp",
+        "image": "https://imagepaste.org/i/rh6h4shu.webp",
         "membershipLevel": 2,
         "description": "A manufacturing operation in Ciudad Juárez associated with Solvay's advanced materials and chemical business."
     },
@@ -50,7 +50,7 @@
         "address": "Technology HUB, Edificio Tera, Office T129, Av. López Mateos 924, Col. Alfa, C.P. 32317, Ciudad Juárez, Chihuahua",
         "phone": "+52 656 478 0536",
         "website": "https://desarrolloeconomico.org/",
-        "image": "desarrollo-economico-juarez.webp",
+        "image": "https://imagepaste.org/i/bg95d48d.webp",
         "membershipLevel": 3,
         "description": "A local organization working with regional partners to support economic development and future employment."
     },
@@ -61,7 +61,7 @@
         "address": "Circuito Fundadores de América S/N, C.P. 32575, Ciudad Juárez, Chihuahua",
         "phone": "+52 656 621 5180",
         "website": "https://www.bmpworldwide.com/",
-        "image": "bmp-mexico.webp",
+        "image": "https://imagepaste.org/i/83fykn2p.webp",
         "membershipLevel": 2,
         "description": "A manufacturing company serving the appliance and automotive sectors from its Ciudad Juárez operation."
     },
@@ -71,8 +71,8 @@
         "industry": "Manufacturing and Packaging",
         "address": "Circuito Intermex Sur 1521, Parque Industrial Intermex Sur, Ciudad Juárez, Chihuahua",
         "phone": "+52 656 295 4900",
-        "website": "https://www.petropacmexico.com/",
-        "image": "petropac.webp",
+        "website": "https://www.petropac.com.mx/",
+        "image": "https://imagepaste.org/i/rnkjvpe8.webp",
         "membershipLevel": 2,
         "description": "A local manufacturing business producing foam and polystyrene products."
     },
@@ -83,7 +83,7 @@
         "address": "Circuito Intermex 1541, Parque Industrial Intermex, C.P. 32720, Ciudad Juárez, Chihuahua",
         "phone": "+52 656 303 0003",
         "website": "https://www.custom-profile.com/",
-        "image": "custom-profile-plastic.webp",
+        "image": "https://imagepaste.org/i/hjgcxav9.webp",
         "membershipLevel": 1,
         "description": "A plastics manufacturer with an industrial operation in the Ciudad Juárez region."
     },
@@ -94,7 +94,7 @@
         "address": "Circuito Intermex Sur 1520, Parque Industrial Intermex Sur, C.P. 32575, Ciudad Juárez, Chihuahua",
         "phone": "+52 656 295 3600",
         "website": "https://www.jonesplastic.com/",
-        "image": "jones-plastic-engineering.webp",
+        "image": "https://imagepaste.org/i/53gxgvfm.webp",
         "membershipLevel": 1,
         "description": "An engineering and manufacturing company producing plastic components for industrial customers."
     },
@@ -104,8 +104,8 @@
         "industry": "Logistics and Transportation",
         "address": "Eje Vial Juan Gabriel 2621, Juárez Industrial, C.P. 32528, Ciudad Juárez, Chihuahua",
         "phone": "+52 656 692 2030",
-        "website": "https://www.3fronteras.com.mx/",
-        "image": "express-tres-fronteras.webp",
+        "website": "https://www.facebook.com/ExpressTresFronteras/",
+        "image": "https://imagepaste.org/i/v6x897ya.webp",
         "membershipLevel": 1,
         "description": "A logistics services provider operating in the Ciudad Juárez industrial area."
     }

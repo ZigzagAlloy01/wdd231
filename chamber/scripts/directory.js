@@ -59,7 +59,12 @@ const createMemberCard = (member) => {
     image.height = 120;
     image.loading = "lazy";
     image.decoding = "async";
-    image.dataset.imageFile = member.image;
+
+    image.addEventListener("load", () => {
+        image.classList.add("is-loaded");
+    });
+
+    image.src = member.image;
 
     const details = createElement("div", "member-details");
     details.append(

@@ -11,13 +11,13 @@
     --color-surface-soft: #e7e7e7;
     --color-surface-muted: #d7d7d7;
     --color-text: #171717;
-    --color-text-soft: #555555;
+    --color-text-soft: #202020;
     --color-border: #b8b8b8;
     --color-strong: #242424;
     --color-strong-text: #ffffff;
     --color-accent: #515151;
     --color-gold: #8a6b20;
-    --color-silver: #777777;
+    --color-silver: #848484;
     --color-member: #373737;
     --font-family: "DM Sans", Arial, sans-serif;
     --font-size-base: 1rem;
@@ -53,7 +53,7 @@ html {
 }
 
 body {
-    min-width: 20rem;
+    min-width: 18rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -268,6 +268,10 @@ input:focus-visible {
     margin-bottom: 1.7rem;
 }
 
+.title-div-business-directory {
+    text-align: center;
+}
+
 .eyebrow {
     margin-bottom: 0.4rem;
     color: var(--color-text-soft);
@@ -406,6 +410,7 @@ input:focus-visible {
     flex-direction: column;
     gap: 0.55rem;
     margin-block: 1.2rem 0.85rem;
+    text-align: center;
 }
 
 .directory-status {
@@ -421,6 +426,7 @@ input:focus-visible {
     gap: 0.4rem;
     color: var(--color-text-soft);
     font-size: 0.76rem;
+    justify-content: center;
 }
 
 .membership-dot {
@@ -524,6 +530,11 @@ input:focus-visible {
     object-fit: contain;
 }
 
+.member-image.is-loaded {
+    background-color: white;
+    background-image: none;
+}
+
 .member-details {
     min-width: 0;
     display: grid;
@@ -604,6 +615,7 @@ input:focus-visible {
     grid-template-columns: minmax(0, 1fr);
     gap: 1.5rem;
     padding-block: 2rem;
+    text-align: center;
 }
 
 .footer-contact,
@@ -634,6 +646,7 @@ input:focus-visible {
     display: flex;
     align-items: center;
     gap: 0.8rem;
+    justify-content: center;
 }
 
 .social-links a {
