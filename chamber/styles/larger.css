@@ -120,6 +120,27 @@
         border: 0;
         text-align: left;
     }
+
+    .hero-media {
+        min-height: clamp(30rem, 47vw, 40rem);
+    }
+
+    .hero-content {
+        padding: clamp(2.5rem, 6vw, 5.5rem);
+    }
+
+    .home-dashboard {
+        grid-template-columns: minmax(0, 1.12fr) minmax(19rem, 0.88fr);
+        gap: 1.35rem;
+    }
+
+    .weather-current {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .spotlight-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 @media screen and (min-width: 75rem) {
@@ -151,6 +172,32 @@
     .member-description {
         font-size: 0.8rem;
     }
+
+    .hero-media {
+        min-height: 34rem;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(4.2rem, 5vw, 5.8rem);
+    }
+
+    .home-dashboard {
+        grid-template-columns: minmax(0, 1.2fr) minmax(22rem, 0.8fr);
+        gap: 1.5rem;
+    }
+
+    .event-card {
+        grid-template-columns: 4.5rem minmax(0, 1fr);
+        gap: 1rem;
+    }
+
+    .spotlight-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .spotlight-card {
+        transition: transform 160ms ease, box-shadow 160ms ease;
+    }
 }
 
 @media screen and (min-width: 110rem) {
@@ -176,6 +223,31 @@
         width: 6.5rem;
         height: 6.5rem;
     }
+
+    .home-content {
+        gap: 2.2rem;
+    }
+
+    .hero-media {
+        min-height: 39rem;
+    }
+
+    .hero-content {
+        padding-inline: 6rem;
+    }
+
+    .home-dashboard {
+        gap: 1.8rem;
+    }
+
+    .spotlight-card-body {
+        grid-template-columns: 6rem minmax(0, 1fr);
+    }
+
+    .spotlight-logo {
+        width: 6rem;
+        height: 6rem;
+    }
 }
 
 @media (hover: hover) {
@@ -191,5 +263,29 @@
     .social-links a:hover {
         transform: translateY(-2px);
         background: var(--color-accent);
+    }
+
+    .button:hover {
+        transform: translateY(-2px);
+    }
+
+    .button-primary:hover {
+        background: #e6e6e6;
+    }
+
+    .button-secondary:hover {
+        background: #ffffff;
+        color: #171717;
+    }
+
+    .text-link:hover,
+    .spotlight-detail a:hover,
+    .weather-attribution a:hover {
+        text-decoration-thickness: 2px;
+    }
+
+    .spotlight-card:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-card);
     }
 }
