@@ -10,14 +10,15 @@
         <meta property="og:type" content="website">
         <meta property="og:title" content="Juárez Chamber of Commerce | Local Business and Community">
         <meta property="og:description" content="Discover local businesses, community events, and opportunities in Ciudad Juárez, Chihuahua.">
-        <meta property="og:image" content="https://zigzagalloy01.github.io/wdd231/chamber/images/juarez-chamber-social.webp">
+        <meta property="og:image" content="https://zigzagalloy01.github.io/wdd231/images/treelogoofficial.webp">
         <meta property="og:url" content="https://zigzagalloy01.github.io/wdd231/chamber/">
         <meta property="og:locale" content="en_US">
         <title>Home | Juárez Chamber of Commerce</title>
         <link rel="icon" type="image/webp" href="https://imagepaste.org/i/s5my9h4r.webp">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"></noscript>
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/larger.css">
@@ -28,7 +29,7 @@
     </head>
     <body>
         <a class="skip-link" href="#main-content">Skip to main content</a>
-        <header>
+        <header class="site-header">
             <div class="header-inner page-shell">
                 <a class="brand" href="https://zigzagalloy01.github.io/wdd231/index.html" aria-label="Juárez Chamber of Commerce home">
                     <img class="brand-logo" alt="Juárez Chamber of Commerce logo" width="58" height="58" src="https://imagepaste.org/i/s5my9h4r.webp">
@@ -50,7 +51,7 @@
                 </nav>
             </div>
         </header>
-        <main>
+        <main class="page-shell main-content" id="main-content">
             <section class="home-hero" aria-labelledby="hero-title">
                 <div class="hero-media">
                     <img class="hero-image" alt="Panoramic view of Ciudad Juárez, Chihuahua" width="1600" height="700" fetchpriority="high" decoding="async" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Ciudad_Juarez%2C_Chihuahua%2C_Mexico_-_panoramio.jpg/960px-Ciudad_Juarez%2C_Chihuahua%2C_Mexico_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20170125215621" >
@@ -79,7 +80,7 @@
                     </div>
                     <div class="events-list">
                         <article class="event-card">
-                            <div class="event-date" aria-label="November 19">
+                            <div class="event-date">
                                 <span>Nov</span>
                                 <strong>19</strong>
                             </div>
@@ -91,7 +92,7 @@
                             </div>
                         </article>
                         <article class="event-card">
-                            <div class="event-date" aria-label="December 3">
+                            <div class="event-date">
                                 <span>Dec</span>
                                 <strong>03</strong>
                             </div>
@@ -103,7 +104,7 @@
                             </div>
                         </article>
                         <article class="event-card">
-                            <div class="event-date" aria-label="December 12">
+                            <div class="event-date">
                                 <span>Dec</span>
                                 <strong>12</strong>
                             </div>
@@ -156,7 +157,7 @@
                 </noscript>
             </section>
         </main>
-        <footer>
+        <footer class="site-footer">
             <div class="footer-inner page-shell">
                 <section>
                     <h2 id="footer-contact-title">Juárez Chamber of Commerce</h2>
