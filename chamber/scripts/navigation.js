@@ -9,6 +9,16 @@ const closeNavigation = () => {
     primaryNavigation.classList.remove("is-open");
 };
 
+const fontStylesheet = document.querySelector("#google-fonts-css");
+if (fontStylesheet) {
+    fontStylesheet.addEventListener("load", () => {
+        fontStylesheet.rel = "stylesheet";
+    });
+    if (fontStylesheet.sheet) {
+        fontStylesheet.rel = "stylesheet";
+    }
+};
+
 if (menuButton && primaryNavigation) {
     menuButton.addEventListener("click", () => {
         const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
