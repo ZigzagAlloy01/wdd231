@@ -1170,6 +1170,452 @@ input:focus-visible {
     outline-offset: 3px;
 }
 
+.join-intro {
+    margin-bottom: 0;
+}
+
+.join-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 1.35rem;
+}
+
+.join-form-panel,
+.membership-aside {
+    min-width: 0;
+    padding: clamp(1rem, 3vw, 1.5rem);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-card);
+}
+
+.join-panel-heading {
+    align-items: center;
+    margin-bottom: 1.45rem;
+}
+
+.required-note {
+    color: var(--color-text-soft);
+    font-size: 0.76rem;
+}
+
+.required-note span,
+.field-label span {
+    color: var(--color-text);
+    font-weight: 800;
+}
+
+.membership-form {
+    display: grid;
+    gap: 1.35rem;
+}
+
+.form-section-heading {
+    display: grid;
+    gap: 0.2rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.form-section-heading h3 {
+    font-size: 1.05rem;
+    font-weight: 800;
+}
+
+.form-section-heading p {
+    color: var(--color-text-soft);
+    font-size: 0.82rem;
+}
+
+.organization-heading {
+    margin-top: 0.2rem;
+}
+
+.form-fields-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+}
+
+.form-field {
+    min-width: 0;
+    display: grid;
+    align-content: start;
+    gap: 0.42rem;
+}
+
+.field-label {
+    font-size: 0.83rem;
+    font-weight: 800;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    min-width: 0;
+    min-height: 2.9rem;
+    padding: 0.72rem 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-small);
+    background: var(--color-page);
+    color: var(--color-text);
+    font: inherit;
+    font-size: 0.9rem;
+}
+
+.form-field textarea {
+    min-height: 8rem;
+    resize: vertical;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: var(--color-text-soft);
+    opacity: 0.85;
+}
+
+.form-field input:focus-visible,
+.form-field select:focus-visible,
+.form-field textarea:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+.form-field input:required:valid,
+.form-field select:required:valid {
+    border-color: var(--color-text-soft);
+}
+
+.field-hint {
+    color: var(--color-text-soft);
+    font-size: 0.72rem;
+    line-height: 1.4;
+}
+
+.form-submit-row {
+    display: grid;
+    gap: 0.9rem;
+    padding-top: 0.35rem;
+}
+
+.form-submit-row p {
+    color: var(--color-text-soft);
+    font-size: 0.76rem;
+}
+
+.form-submit {
+    width: 100%;
+    min-height: 3.1rem;
+    cursor: pointer;
+    font: inherit;
+    background: darkgray;
+    border: 0.1rem solid black;
+    font-weight: 600;
+    justify-self: center;
+    font-size: 0.8rem;
+}
+
+.membership-aside {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-aside-heading h2 {
+    margin-bottom: 0.45rem;
+    font-size: clamp(1.4rem, 3vw, 1.85rem);
+    line-height: 1.15;
+}
+
+.membership-aside-heading > p:last-child {
+    max-width: 38rem;
+    color: var(--color-text-soft);
+    font-size: 0.85rem;
+}
+
+.membership-card-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.8rem;
+}
+
+.membership-level-card {
+    min-width: 0;
+    min-height: 12rem;
+    display: grid;
+    align-content: start;
+    justify-items: start;
+    gap: 0.4rem;
+    padding: 1rem;
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-text-soft);
+    border-radius: var(--radius-medium);
+    background: var(--color-surface-soft);
+    animation: membership-enter 680ms cubic-bezier(0.2, 0.7, 0.25, 1) both;
+}
+
+.membership-level-card:nth-child(1) {
+    animation-delay: 80ms;
+}
+
+.membership-level-card:nth-child(2) {
+    animation-delay: 170ms;
+}
+
+.membership-level-card:nth-child(3) {
+    animation-delay: 260ms;
+}
+
+.membership-level-card:nth-child(4) {
+    animation-delay: 350ms;
+}
+
+.membership-np {
+    border-left-color: var(--color-member);
+}
+
+.membership-bronze {
+    border-left-color: #777777;
+}
+
+.membership-silver {
+    border-left-color: #999999;
+}
+
+.membership-gold {
+    border-left-color: #444444;
+}
+
+.membership-card-label {
+    color: var(--color-text-soft);
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.membership-level-card h3 {
+    font-size: 1.05rem;
+    line-height: 1.2;
+}
+
+.membership-price {
+    font-size: 0.88rem;
+    font-weight: 800;
+}
+
+.membership-card-copy {
+    color: var(--color-text-soft);
+    font-size: 0.78rem;
+    line-height: 1.45;
+}
+
+.membership-info-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2rem;
+    margin-top: 0.15rem;
+    color: var(--color-text);
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-underline-offset: 0.2em;
+}
+
+.membership-disclaimer {
+    color: var(--color-text-soft);
+    font-size: 0.7rem;
+    line-height: 1.45;
+}
+
+.membership-dialog {
+    width: min(42rem, calc(100% - 2rem));
+    max-width: 42rem;
+    max-height: min(80vh, 46rem);
+    margin: auto;
+    padding: 0;
+    overflow: auto;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    background: var(--color-surface);
+    color: var(--color-text);
+    box-shadow: 0 1rem 4rem rgb(0 0 0 / 0.25);
+}
+
+.membership-dialog::backdrop {
+    background: rgb(0 0 0 / 0.68);
+    backdrop-filter: blur(3px);
+}
+
+.dialog-content {
+    display: grid;
+    gap: 0.9rem;
+    padding: clamp(1.25rem, 4vw, 2rem);
+}
+
+.dialog-content h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    line-height: 1.15;
+}
+
+.dialog-content > p:not(.eyebrow) {
+    color: var(--color-text-soft);
+    font-size: 0.9rem;
+}
+
+.dialog-content ul {
+    display: grid;
+    gap: 0.6rem;
+    padding-left: 1.25rem;
+    color: var(--color-text);
+    font-size: 0.88rem;
+}
+
+.dialog-content li::marker {
+    color: var(--color-text-soft);
+}
+
+.dialog-content form {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+}
+
+.dialog-close {
+    min-width: 7rem;
+    border-color: var(--color-strong);
+    background: var(--color-strong);
+    color: var(--color-strong-text);
+    cursor: pointer;
+}
+
+.thankyou-content {
+    display: grid;
+    align-content: start;
+}
+
+.thankyou-panel {
+    width: min(100%, 58rem);
+    margin-inline: auto;
+    padding: clamp(1.25rem, 4vw, 2.5rem);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-card);
+    text-align: center;
+}
+
+.thankyou-mark {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 1.1rem;
+    border: 1px solid var(--color-strong);
+    border-radius: 50%;
+    background: var(--color-strong);
+    color: var(--color-strong-text);
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.thankyou-panel h1 {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+}
+
+.thankyou-intro {
+    max-width: 43rem;
+    margin: 0.8rem auto 1.7rem;
+    color: var(--color-text-soft);
+    font-size: 0.95rem;
+}
+
+.submission-summary {
+    padding: clamp(1rem, 3vw, 1.5rem);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    background: var(--color-page);
+    text-align: left;
+}
+
+.submission-summary h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.submission-details {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+}
+
+.submission-detail {
+    min-width: 0;
+    display: grid;
+    gap: 0.2rem;
+    padding: 0.8rem 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.submission-detail dt {
+    color: var(--color-text-soft);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.submission-detail dd {
+    color: var(--color-text);
+    font-size: 0.92rem;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.submission-missing {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-small);
+    background: var(--color-surface-soft);
+    color: var(--color-text);
+    text-align: left;
+}
+
+.thankyou-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.thankyou-actions .button-primary {
+    border-color: var(--color-strong);
+    background: var(--color-strong);
+    color: var(--color-strong-text);
+}
+
+.thankyou-actions .button-secondary {
+    border-color: var(--color-strong);
+    background: transparent;
+    color: var(--color-text);
+}
+
+@keyframes membership-enter {
+    from {
+        opacity: 0;
+        transform: translateY(1.1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
@@ -1181,5 +1627,9 @@ input:focus-visible {
         transition-duration: 0.01ms;
         animation-duration: 0.01ms;
         animation-iteration-count: 1;
+    }
+
+    .membership-level-card {
+        animation: none;
     }
 }

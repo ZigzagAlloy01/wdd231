@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Apply for membership in the Juárez Chamber of Commerce and connect your organization with business opportunities in Ciudad Juárez, Chihuahua.">
+        <meta name="author" content="Iván Salamanca">
+        <meta name="keywords" content="Juárez Chamber of Commerce, business membership, Ciudad Juárez, Chihuahua, local business">
+        <meta name="theme-color" content="#f4f4f4">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Become a Member | Juárez Chamber of Commerce">
+        <meta property="og:description" content="Explore membership options and apply to join the Juárez Chamber of Commerce in Ciudad Juárez, Chihuahua.">
+        <meta property="og:image" content="https://zigzagalloy01.github.io/wdd231/images/treelogonewtoday.webp">
+        <meta property="og:url" content="https://zigzagalloy01.github.io/wdd231/chamber/">
+        <meta property="og:locale" content="en_US">
+        <title>Join the Chamber | Juárez Chamber of Commerce</title>
+        <link rel="icon" type="image/webp" href="https://zigzagalloy01.github.io/wdd231/images/treelogonewtoday.webp">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/join.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main-content">Skip to main content</a>
+        <header class="site-header">
+            <div class="header-inner page-shell">
+                <a class="brand" href="https://zigzagalloy01.github.io/wdd231/index.html" aria-label="Juárez Chamber of Commerce home">
+                    <img class="brand-logo" alt="Juárez Chamber of Commerce logo" width="58" height="58" src="https://zigzagalloy01.github.io/wdd231/images/treelogonewtoday.webp">
+                    <span class="brand-name">Juárez Chamber <span>of Commerce</span></span>
+                </a>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+                        <span aria-hidden="true">◐</span>
+                    </button>
+                    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+                        <span class="menu-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+                    <a href="https://zigzagalloy01.github.io/wdd231/chamber/index.html">Home</a>
+                    <a href="directory.html">Directory</a>
+                    <a href="join.html" aria-current="page">Join</a>
+                    <a href="discover.html">Discover</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="page-shell main-content join-content" id="main-content">
+            <section class="page-intro join-intro" aria-labelledby="page-title">
+                <div>
+                    <p class="eyebrow">Build connections. Grow together.</p>
+                    <h1 id="page-title">Become a Chamber Member</h1>
+                    <p class="intro-copy">Join a network committed to strengthening businesses and creating opportunities throughout Ciudad Juárez.</p>
+                </div>
+                <div class="directory-summary" aria-label="Chamber location">
+                    <span class="summary-label">Your local business network</span>
+                    <strong>Ciudad Juárez</strong>
+                    <span>Chihuahua, Mexico</span>
+                </div>
+            </section>
+
+            <div class="join-layout">
+                <section class="join-form-panel" aria-labelledby="application-title">
+                    <div class="home-section-heading join-panel-heading">
+                        <div>
+                            <p class="eyebrow">Membership application</p>
+                            <h2 id="application-title">Tell us about yourself</h2>
+                        </div>
+                        <p class="required-note"><span aria-hidden="true">*</span> Required fields</p>
+                    </div>
+
+                    <form class="membership-form" action="thankyou.html" method="get">
+                        <div class="form-section-heading">
+                            <h3>Applicant information</h3>
+                            <p>Provide the best contact information for your application.</p>
+                        </div>
+
+                        <div class="form-fields-grid">
+                            <label class="form-field" for="first-name">
+                                <span class="field-label">First name <span aria-hidden="true">*</span></span>
+                                <input id="first-name" name="firstName" type="text" title="Enter your first name." autocomplete="given-name" required>
+                            </label>
+
+                            <label class="form-field" for="last-name">
+                                <span class="field-label">Last name <span aria-hidden="true">*</span></span>
+                                <input id="last-name" name="lastName" type="text" title="Enter your last name." autocomplete="family-name" required>
+                            </label>
+
+                            <label class="form-field form-field-wide" for="organization-title">
+                                <span class="field-label">Organizational title</span>
+                                <input id="organization-title" name="organizationTitle" type="text" title="Enter your position using at least seven letters, spaces, or hyphens. Numbers and special characters are not allowed." autocomplete="organization-title" pattern="[A-Za-z -]{7,}" minlength="7" placeholder="Operations Manager">
+                                <span class="field-hint">Use at least seven letters, spaces, or hyphens.</span>
+                            </label>
+
+                            <label class="form-field" for="email">
+                                <span class="field-label">Email address <span aria-hidden="true">*</span></span>
+                                <input id="email" name="email" type="email" title="Enter a valid email address." autocomplete="email" placeholder="name@example.com" required>
+                            </label>
+
+                            <label class="form-field" for="phone">
+                                <span class="field-label">Mobile phone number <span aria-hidden="true">*</span></span>
+                                <input id="phone" name="phone" type="tel" title="Enter your mobile phone number, including the area or country code." autocomplete="tel" placeholder="+52 656 123 4567" required>
+                            </label>
+                        </div>
+
+                        <div class="form-section-heading organization-heading">
+                            <h3>Organization information</h3>
+                            <p>Tell us about the business or organization you represent.</p>
+                        </div>
+
+                        <div class="form-fields-grid">
+                            <label class="form-field form-field-wide" for="organization">
+                                <span class="field-label">Business or organization name <span aria-hidden="true">*</span></span>
+                                <input id="organization" name="organization" type="text" title="Enter the legal or public name of your business or organization." autocomplete="organization" required>
+                            </label>
+
+                            <label class="form-field form-field-wide" for="membership-level">
+                                <span class="field-label">Membership level <span aria-hidden="true">*</span></span>
+                                <select id="membership-level" name="membershipLevel" title="Select the membership level that best fits your organization." autocomplete="off" required>
+                                    <option value="" selected disabled>Select a membership level</option>
+                                    <option value="np">NP Membership — Non-profit</option>
+                                    <option value="bronze">Bronze Membership</option>
+                                    <option value="silver">Silver Membership</option>
+                                    <option value="gold">Gold Membership</option>
+                                </select>
+                            </label>
+
+                            <label class="form-field form-field-wide" for="description">
+                                <span class="field-label">Business or organization description</span>
+                                <textarea id="description" name="description" rows="5" title="Briefly describe your organization's activities, products, or services." autocomplete="off" placeholder="Tell us about your organization, its services, and the community it serves."></textarea>
+                            </label>
+                        </div>
+
+                        <input id="timestamp" name="timestamp" type="hidden" value="">
+                        <div class="form-submit-row">
+                            <p>Your information will be used to review this membership application.</p>
+                            <input class="form-submit button button-primary" type="submit" value="Submit Membership Application">
+                        </div>
+                    </form>
+                </section>
+
+                <aside class="membership-aside" aria-labelledby="membership-options-title">
+                    <div class="membership-aside-heading">
+                        <p class="eyebrow">Choose your level</p>
+                        <h2 id="membership-options-title">Membership Options</h2>
+                        <p>Every level supports local business growth. Explore the benefits to find the right fit.</p>
+                    </div>
+
+                    <div class="membership-card-grid">
+                        <article class="membership-level-card membership-np">
+                            <span class="membership-card-label">Community support</span>
+                            <h3>NP Membership</h3>
+                            <p class="membership-price">No fee</p>
+                            <p class="membership-card-copy">For eligible non-profit organizations.</p>
+                            <a href="#np-modal" class="membership-info-link" data-dialog-target="np-modal" aria-haspopup="dialog">View benefits</a>
+                        </article>
+
+                        <article class="membership-level-card membership-bronze">
+                            <span class="membership-card-label">Getting connected</span>
+                            <h3>Bronze Membership</h3>
+                            <p class="membership-price">MXN $350 / month</p>
+                            <p class="membership-card-copy">A starting point for growing businesses.</p>
+                            <a href="#bronze-modal" class="membership-info-link" data-dialog-target="bronze-modal" aria-haspopup="dialog">View benefits</a>
+                        </article>
+
+                        <article class="membership-level-card membership-silver">
+                            <span class="membership-card-label">More visibility</span>
+                            <h3>Silver Membership</h3>
+                            <p class="membership-price">MXN $750 / month</p>
+                            <p class="membership-card-copy">More opportunities to promote your business.</p>
+                            <a href="#silver-modal" class="membership-info-link" data-dialog-target="silver-modal" aria-haspopup="dialog">View benefits</a>
+                        </article>
+
+                        <article class="membership-level-card membership-gold">
+                            <span class="membership-card-label">Premier participation</span>
+                            <h3>Gold Membership</h3>
+                            <p class="membership-price">MXN $1,500 / month</p>
+                            <p class="membership-card-copy">Expanded promotion and event opportunities.</p>
+                            <a href="#gold-modal" class="membership-info-link" data-dialog-target="gold-modal" aria-haspopup="dialog">View benefits</a>
+                        </article>
+                    </div>
+                    <p class="membership-disclaimer">Published fees are illustrative course-project examples and are not official Chamber rates.</p>
+                </aside>
+            </div>
+
+            <section class="membership-dialogs" aria-label="Membership benefits">
+                <dialog class="membership-dialog" id="np-modal" aria-labelledby="np-modal-title" aria-describedby="np-modal-description">
+                    <div class="dialog-content">
+                        <p class="eyebrow">Membership benefits</p>
+                        <h2 id="np-modal-title">NP Membership</h2>
+                        <p id="np-modal-description">Designed for non-profit organizations that want to connect with the local business community.</p>
+                        <ul>
+                            <li>Basic organization listing in the Chamber directory</li>
+                            <li>Access to selected community networking events</li>
+                            <li>Chamber newsletters and local business updates</li>
+                            <li>Invitations to non-profit collaboration opportunities</li>
+                        </ul>
+                        <form method="dialog"><button class="button button-primary dialog-close" type="submit">Close</button></form>
+                    </div>
+                </dialog>
+
+                <dialog class="membership-dialog" id="bronze-modal" aria-labelledby="bronze-modal-title" aria-describedby="bronze-modal-description">
+                    <div class="dialog-content">
+                        <p class="eyebrow">Membership benefits</p>
+                        <h2 id="bronze-modal-title">Bronze Membership</h2>
+                        <p id="bronze-modal-description">A practical option for small and emerging businesses building their local presence.</p>
+                        <ul>
+                            <li>Standard business listing in the Chamber directory</li>
+                            <li>Access to member networking events</li>
+                            <li>Discounted registration for selected workshops</li>
+                            <li>Monthly business newsletter and resource updates</li>
+                        </ul>
+                        <form method="dialog"><button class="button button-primary dialog-close" type="submit">Close</button></form>
+                    </div>
+                </dialog>
+
+                <dialog class="membership-dialog" id="silver-modal" aria-labelledby="silver-modal-title" aria-describedby="silver-modal-description">
+                    <div class="dialog-content">
+                        <p class="eyebrow">Membership benefits</p>
+                        <h2 id="silver-modal-title">Silver Membership</h2>
+                        <p id="silver-modal-description">For established organizations seeking more visibility, learning, and engagement.</p>
+                        <ul>
+                            <li>Enhanced business directory listing</li>
+                            <li>All Bronze benefits</li>
+                            <li>Priority consideration for a Chamber website spotlight</li>
+                            <li>Two complimentary seats at selected training sessions</li>
+                            <li>Discounted event and luncheon registration</li>
+                        </ul>
+                        <form method="dialog"><button class="button button-primary dialog-close" type="submit">Close</button></form>
+                    </div>
+                </dialog>
+
+                <dialog class="membership-dialog" id="gold-modal" aria-labelledby="gold-modal-title" aria-describedby="gold-modal-description">
+                    <div class="dialog-content">
+                        <p class="eyebrow">Membership benefits</p>
+                        <h2 id="gold-modal-title">Gold Membership</h2>
+                        <p id="gold-modal-description">A premier option for organizations looking for expanded promotion and deeper participation.</p>
+                        <ul>
+                            <li>Premium business directory placement</li>
+                            <li>All Silver benefits</li>
+                            <li>Priority business spotlight opportunities</li>
+                            <li>Complimentary seats at selected Chamber events</li>
+                            <li>Enhanced event sponsorship and advertising opportunities</li>
+                            <li>Priority invitations to leadership and business roundtables</li>
+                        </ul>
+                        <form method="dialog"><button class="button button-primary dialog-close" type="submit">Close</button></form>
+                    </div>
+                </dialog>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-inner page-shell">
+                <section>
+                    <h2 id="footer-contact-title">Juárez Chamber of Commerce</h2>
+                    <p>Ciudad Juárez, Chihuahua, Mexico</p>
+                    <p>Supporting local business and regional growth</p>
+                    <p><a href="mailto:ivanblued@outlook.com">ivanblued@outlook.com</a></p>
+                </section>
+                <div class="social-links">
+                    <a class="social-link" href="https://github.com/ZigzagAlloy01" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.82c.56.1.77-.24.77-.54v-2.1c-3.14.68-3.8-1.33-3.8-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.66 1.23 3.31.94.1-.73.4-1.23.72-1.51-2.5-.29-5.12-1.25-5.12-5.55 0-1.23.44-2.24 1.17-3.03-.12-.29-.51-1.44.11-2.99 0 0 .95-.3 3.08 1.16a10.7 10.7 0 0 1 5.6 0c2.13-1.45 3.08-1.16 3.08-1.16.62 1.55.23 2.7.11 2.99.73.79 1.17 1.8 1.17 3.03 0 4.31-2.62 5.25-5.13 5.54.4.35.76 1.03.76 2.08v3.1c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg>
+                    </a>
+                    <a class="social-link social-link--linkedin" href="https://www.linkedin.com/in/lorenzo-iv%C3%A1n-salamanca-c%C3%B3rdoba-935813367" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.53v16.94c0 .85.69 1.53 1.55 1.53h16.9c.86 0 1.55-.68 1.55-1.53V3.53C22 2.68 21.31 2 20.45 2ZM7.93 18.46H4.98V9h2.95v9.46ZM6.46 7.71a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12 10.75h-2.94v-4.6c0-1.1-.02-2.52-1.54-2.52-1.54 0-1.78 1.2-1.78 2.44v4.68H9.26V9h2.82v1.29h.04c.4-.74 1.35-1.52 2.78-1.52 2.98 0 3.56 1.96 3.56 4.5v5.19Z"/></svg>
+                    </a>
+                    <a class="social-link social-link--instagram" href="https://www.instagram.com/ivanblued/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                </div>
+                <section class="footer-development" aria-label="Page development information">
+                    <p>
+                        WDD 231 Academic Project
+                    </p>
+                    <p>
+                        By Lorenzo Iván Salamanca
+                    </p>
+                    <p>© <span id="currentyear"></span> <span>Juárez Chamber of Commerce</span>· <span>Mexico</span>.</p>
+                    <p>Last Modification: <span id="lastModified"></span></p>
+                </section>
+            </div>
+        </footer>
+    </body>
+</html>
