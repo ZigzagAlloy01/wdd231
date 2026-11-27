@@ -1,6 +1,7 @@
 const timestampField = document.querySelector("#timestamp");
 const membershipLinks = document.querySelectorAll("[data-dialog-target]");
 const membershipDialogs = document.querySelectorAll(".membership-dialog");
+const dialogClose = document.querySelectorAll(".dialog-close");
 
 if (timestampField) {
     timestampField.value = new Date().toISOString();
@@ -23,5 +24,11 @@ membershipDialogs.forEach((dialog) => {
         if (e.target === dialog) {
             dialog.close();
         }
+    });
+});
+
+dialogClose.forEach((button) => {
+    button.addEventListener("click", () => {
+        button.closest('dialog')?.close();
     });
 });
